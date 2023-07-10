@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body {
+    font-family: Roboto;
+}
 
 .center-content {
     padding-left: calc(50% - 600px);
@@ -19,6 +22,9 @@
 }
 
 .top-header-logo {
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
     display: flex;
     gap: 10px;
     flex-direction: row;
