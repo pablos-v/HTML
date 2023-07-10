@@ -6,6 +6,12 @@
 .top-header-logo {
     margin-top: 40px;
     margin-right: 340px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-header-logo-text-1 {
@@ -44,6 +50,12 @@
 }
 
 .top-content {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     margin-top: 90px;
 }
 
