@@ -10,11 +10,12 @@ body {
     padding-right: calc(50% - 588px);
 }
 
-.top-head {
-    display: flex;
+.all-content {
+    display: grid;
     justify-content: center;
-    align-items: center;
-
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 37% 17% 46%; */
+    gap: 30px;
 }
 
 .top-head-card {
@@ -55,14 +56,6 @@ body {
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
-.top-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 28% 72%;
-    gap: 30px;
-    background: #FAFAFA;
-}
-
 .top-content-text {
     grid-column: span 3;
     display: flex;
@@ -92,7 +85,14 @@ body {
 
 .top-content-card {
     background: #FFF;
+    display: flex;
     padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 .top-content-card-title {
@@ -116,8 +116,6 @@ body {
 .top-content-card-btn {
     text-align: center;
     text-decoration: none;
-    width: 150px;
-    height: 50px;
     border-radius: 50px;
     color: white;
     border: none;
