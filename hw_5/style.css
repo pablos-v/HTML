@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #FFF;
+    font-family: Arial Black;
+    padding-left: calc(50% - 588px);
+    padding-right: calc(50% - 588px);
+}
+
+.top-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-head-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px;
+}
+
+.top-head-card-title {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-head-card-text {
+    color: #666;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+}
+
+.top-head-card-more {
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 16.5px */
+}
+
+.top-card-center {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.top-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 28% 72%;
+    gap: 30px;
+    background: #FAFAFA;
+}
+
+.top-content-text {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 20% 50px 20%;
+}
+
+.top-content-text-title {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-content-text-text {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+}
+
+.top-content-card {
+    background: #FFF;
+    padding: 30px;
+}
+
+.top-content-card-title {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-content-card-text {
+    color: #AAA;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+}
+
+.top-content-card-btn {
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    padding: 15px 36px 15px 46px;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 400;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
