@@ -85,3 +85,29 @@ body {
     width: 306px;
     height: 322px;
 }
+
+@media (max-width: 767px) {
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .welcome-big {
+        grid-row: span 1;
+        grid-column: span 1;
+        gap: 30px;
+    }
+
+    .welcome-title {
+        padding: 0px;
+    }
+
+    .welcome-big-image {
+        width: auto;
+        height: auto;
+    }
+
+    .top-content {
+        grid-template-columns: 1fr;
+    }
+}
