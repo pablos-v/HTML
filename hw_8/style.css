@@ -33,6 +33,12 @@ body {
     justify-content: space-between;
 }
 
+.navigation {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
 .top {
     display: flex;
     align-items: center;
@@ -142,7 +148,7 @@ body {
 }
 
 .feat-card {
-    width: 360px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     background-color: #F8F8F8;
@@ -286,5 +292,88 @@ body {
 
     .top-block-text-text-orange {
         font-size: 24px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+    .nav-2 {
+        display: none;
+    }
+
+    .nav-3 {
+        display: none;
+    }
+
+    .top {
+        justify-content: center;
+    }
+
+    .top-block {
+        width: 265px;
+        height: 61px;
+    }
+
+    .top-block-text-h1 {
+        font-size: 32px;
+    }
+
+    .top-block-text-text-black {
+        font-size: 20px;
+    }
+
+    .top-block-text-text-orange {
+        font-size: 20px;
+    }
+
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .feat {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .feat-top {
+        margin-bottom: 65px;
+    }
+
+    .feat-btn {
+        margin-top: 40px;
+    }
+
+    .top-img {
+        display: none;
+    }
+
+    .top-block {
+        padding: 150px 56px;
+    }
+
+    .menu {
+        padding: 25px 16px;
+    }
+
+    .accesories {
+        position: relative;
+        overflow: hidden;
+        height: 111px;
+    }
+
+    .accesories img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 111px;
+        object-fit: cover;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
     }
 }

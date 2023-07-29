@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>RegForm</h1>
+    <form action="#">
+        Your name: <input type="text" autofocus required placeholder="Name"><br>
+        Password: <input type="password" required><br>
+        Mail: <input type="email" required placeholder="@@@"><br>
+        DateOfBirth: <input type="date" required><br>
+        Age: <input type="number" required><br>
+        Grade: <input type="range" name="1" id=""><br>
+        <label for="fruit">Фрукт</label>
+        <input id="fruit" list="dl_fruits"><br>
+
+        <datalist id="dl_fruits">
+            <option label="Яблоко" value="apple">
+            <option label="Ананас" value="ananas">
+            <option label="Абрикос" value="apricot">
+            <option label="Арбуз" value="watermelon">
+            <option label="Авокадо" value="avocado">
+            <option label="Апельсин" value="Orange">
+        </datalist>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>
