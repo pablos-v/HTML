@@ -1,33 +1,67 @@
-.product {
-    width: 250px;
-    padding: 24px;
+/* .item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
     border: 1px solid #000;
+    transition: transform 1s;
+}
+
+.item_1:hover {
+    transform: translateX(50px);
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+}
+
+.item_2:hover {
+    transform: scale(2, 2);
+    transition-timing-function: ease;
+}
+
+.item_3:hover {
+    transform: rotate(60deg);
+} */
+.content {
+    margin-top: 200px;
+    margin-left: 200px;
     position: relative;
 }
 
-.product__img {
-    background-color: forestgreen;
-    height: 150px;
+.item {
+    position: absolute;
+    width: 150px;
+    height: 62px;
+    /* border: 1px solid #000; */
+    background-color: blue;
+    transition: all 0.8s;
 }
 
-.product::after {
-    content: 'new';
-    width: 35px;
-    height: 35px;
-    color: blue;
+.content:hover .item_1 {
+    transform: rotate(45deg);
     background-color: red;
-    position: absolute;
-    right: 0;
-    top: 0;
 }
 
-.product::before {
-    content: 'sale';
-    width: 35px;
-    height: 35px;
-    color: rgb(17, 17, 46);
-    background-color: rgb(255, 217, 0);
-    position: absolute;
-    left: 0;
-    top: 0;
+.content:hover .item_2 {
+    transform: rotate(-90deg);
+    background-color: red;
+}
+
+.content:hover .item_3 {
+    transform: rotate(135deg);
+    background-color: red;
+}
+
+.content:hover .item_4 {
+    /* transform: rotate(180deg); */
+    background-color: red;
+}
+
+.content:hover .item_4::after {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    content: 'STOP';
+    font-size: 50px;
+    color: white;
+    text-align: center;
 }
